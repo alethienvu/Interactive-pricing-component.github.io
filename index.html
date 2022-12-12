@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="main">
+    <div class="container">
+      <div class="title-wrapper">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+      <div class="card">
+        <div class="card-title mx-40">
+          <div class="pageview"><span>100k</span> Pageviews</div>
+          <div class="price"><span>$16.00</span><div>/ month</div></div>
+        </div>
+        <input type="range" value="50" min="0" max="100" step="1" class="progress">
+        <div class="billing-wrapper">
+          <span>Monthly Billing</span>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <span style="margin-right: 15px;">Yearly Billing</span>
+          <span class="discount">25% discount</span>
+          <span class="discount-mobile">-25%</span>
+        </div>
+        <hr>
+        <div class="footer mx-40">
+          <ul>
+            <li><span>Unlimited websites</span></li>
+            <li><span>100% data ownership</span></li>
+            <li><span>Email reports</span></li>
+          </ul>
+          <button class="btn-start">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
